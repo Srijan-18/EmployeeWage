@@ -11,25 +11,29 @@ employeeDailyWage=0
 employeeDailyHours=0
 employeeWorkHours=0
 employeeWorkDays=0
-employeeMonthlyWage=0;
-while  (( employeeWorkHours<MAX_WORKING_HOURS && employeeWorkDays<MAX_WORKING_DAYS ))
-do
-	employeeAttendance=$(( RANDOM%3 ))
-	case $employeeAttendance in
+employeeMonthlyWage=0
+
+function dailyWorkHours()
+{
+	case $1 in
 		$IS_PART_TIME)
-			employeeDailyHours=8
-			employeeWorkHours=$((employeeWorkHours+employeeDailyHours))
+			echo 4
 		;;
 
 		$IS_FULL_TIME)
-			employeeDailyHours=8
-			employeeWorkHours=$((employeeWorkHours+employeeDailyHours))
+			echo 8
 		;;
 
 		*)
-			employeeDailyHours=0
+			echo 0
 		;;
 	esac
+}
+while  (( employeeWorkHours<MAX_WORKING_HOURS && employeeWorkDays<MAX_WORKING_DAYS ))
+do
+	employeeAttendance=$(( RANDOM%3 ))
+	employeeDailyHours=$( dailyWorkHours $employeeAttendance )
+	employeeWorkHours=$((employeeWorkHours+employeeDailyHours))
 	((employeeWorkDays++))
 	employeeDailyWage=$((WAGE_PER_HOUR*employeeDailyHours))
 	employeeMonthlyWage=$((employeeMonthlyWage+employeeDailyWage))
