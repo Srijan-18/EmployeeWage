@@ -7,7 +7,6 @@ IS_PART_TIME=2
 MAX_WORKING_DAYS=20
 MAX_WORKING_HOURS=100
 WAGE_PER_HOUR=20
-employeeDailyWage=0
 employeeDailyHours=0
 employeeWorkHours=0
 employeeWorkDays=0
@@ -35,7 +34,7 @@ do
 	employeeDailyHours=$( dailyWorkHours $employeeAttendance )
 	employeeWorkHours=$((employeeWorkHours+employeeDailyHours))
 	((employeeWorkDays++))
-	employeeDailyWage=$((WAGE_PER_HOUR*employeeDailyHours))
+	employeeDailyWage[$employeeWorkDays]=$((WAGE_PER_HOUR*employeeDailyHours))
 	employeeMonthlyWage=$((employeeMonthlyWage+employeeDailyWage))
 done
 
