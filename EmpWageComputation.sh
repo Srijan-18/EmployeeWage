@@ -1,12 +1,17 @@
 #!/bin/bash -x
 
 echo "Welcome to Employee Wage Computation"
-empAttendance=$(( RANDOM%2 ))
-IS_PRESENT=1
+
+IS_FULL_TIME=1
+IS_PART_TIME=2
 WAGE_PER_HOUR=20
 employeeDailyWage=0;
 employeeWorkHours=0
-if [ $empAttendance -eq $IS_PRESENT ]
+empAttendance=$(( RANDOM%3 ))
+if [ $empAttendance -eq $IS_FULL_TIME ]
+then
+	employeeWorkHours=8
+elif [ $empAttendance -eq $IS_PART_TIME ]
 then
 	employeeWorkHours=8
 else
