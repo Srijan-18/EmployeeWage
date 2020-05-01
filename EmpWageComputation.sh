@@ -35,6 +35,6 @@ do
 	employeeWorkHours=$((employeeWorkHours+employeeDailyHours))
 	((employeeWorkDays++))
 	employeeDailyWage[$employeeWorkDays]=$((WAGE_PER_HOUR*employeeDailyHours))
-	employeeMonthlyWage=$((employeeMonthlyWage+employeeDailyWage))
+	employeeMonthlyWage=$((employeeMonthlyWage+employeeDailyWage[$employeeWorkDays]))
 done
 
