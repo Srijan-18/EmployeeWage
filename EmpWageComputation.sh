@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 echo "Welcome to Employee Wage Computation"
-
+declare -A employeeDailyWage
 IS_FULL_TIME=1
 IS_PART_TIME=2
 MAX_WORKING_DAYS=20
@@ -34,7 +34,7 @@ do
 	employeeDailyHours=$( dailyWorkHours $employeeAttendance )
 	employeeWorkHours=$((employeeWorkHours+employeeDailyHours))
 	((employeeWorkDays++))
-	employeeDailyWage[$employeeWorkDays]=$((WAGE_PER_HOUR*employeeDailyHours))
-	employeeMonthlyWage=$((employeeMonthlyWage+employeeDailyWage))
+	employeeDailyWage["Day"$employeeWorkDays]=$((WAGE_PER_HOUR*employeeDailyHours))
+	employeeMonthlyWage=$((employeeMonthlyWage+employeeDailyWage["Day"$employeeWorkDays]))
 done
-
+echo ${!employeeDailyWage[@]} ${employeeDailyWage[@]}
