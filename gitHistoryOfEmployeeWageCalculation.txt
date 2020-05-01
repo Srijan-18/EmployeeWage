@@ -1,0 +1,129 @@
+  501  git clone https://github.com/manojpawane/ShubhamBatchGitPractise.git
+  507  git checkout -b Srijan
+  509  git add .
+  510  git commit -m "Added Multimedia Feature"
+  511  git push -u origin Srijan
+  512  git checkout master
+  513  git status
+  514  git pull
+  516  history | grep git
+  523  git init
+  525  git add .
+  526  git commit -m "Welcome Message Created" 
+  527  git remote add origin https://github.com/Srijan-18/EmployeeWage.git
+  528  git push -u origin master
+  529  git status
+  530  git checkout -b EmployeeAttendanceUC
+  532  git add .
+  533  git commit -m "Employe Attendace Taken UC1"
+  534  git push -u origin EmployeeAttendanceUC
+  535  git pull 
+  536  git checkout master
+  537  git merge EmployeeAttendanceUC
+  538  git branch 
+  539  git commit -m "UC Employee Attendance Taken"
+  540  git push -u origin master
+  541  git add .
+  543  git checkout EmployeeAttendanceUC 
+  544  git pull master
+  545  git merge master
+  546  git add .
+  547  git checkout master
+  548  git push -u origin master
+  549  git pull
+  550  git commit -m "Attendace Code Updated"
+  551  git push -u origin master
+  554  git checkout EmployeeAttendanceUC 
+  555  git checkout EmployeeAttendanceUC 
+  556  git commit -m "Error Handelled"
+  557  git add .
+  558  git commit -m "Error Handelled"
+  559  git push -u origin master
+  560  git status
+  563  git checkout EmployeeAttendanceUC
+  564  git merge master
+  566  git add .
+  567  git push
+  568  git commit -m "Error at line 6 Handelled"
+  569  git push -u origin EmployeeAttendanceUC 
+  570  git checkout master
+  571  git merge EmployeeAttendanceUC  
+  572  git push origin master
+  573  git push -u origin master
+  574  git checkout -b DailyWageComputationUC
+  582  git add .
+  585  git add .
+  586  git commit -m "EMPLOYEE DAILY WAGE CALCULATED"
+  587  git push -u origin DailyWageComputationUC
+  588  git checkout master
+  589  git pull
+  590  git merge DailyWageComputationUC 
+  591  git commit -m "Daily Wage Computed"
+  592  git push -u origin master
+  593  git checkout -b UC3PartTime
+  594  git pull
+  595  git pull -r master
+  596  git merge master
+  598  git add .
+  602  git add .
+  603  git commit -m "PART TIME EMPLOYEE WAGE CALCULATED"
+  604  git checkout master
+  605  git merge UC3PartTime 
+  606  git push -u origin master
+  607  git checkout UC3PartTime 
+  608  git push origin UC3PartTime 
+  609  git checkout -b UC4SwitchCaseSolution
+  617  git add .
+  618  git commit -m "Switch Case implemented UC4"
+  619  git push origin -u UC4SwitchCaseSolution 
+  620  git checkout master 
+  621  git merge UC4SwitchCaseSolution  
+  622  git push origin master
+  623  git checkout -b UC5MonthlyWageCalculation
+  631  git add EmpWageComputation.sh
+  632  git commit -m "Monthly Wage Calculated UC5"
+  633  git push origin UC5MonthlyWageCalculation 
+  634  git checkout master
+  635  git pull
+  636  git merge UC5MonthlyWageCalculation 
+  637  git push origin master 
+  638  git pull
+  640  git branch -b UC6CheckDaysAndHoursForWageCalculation
+  641  git checkout -b UC6CheckDaysAndHoursForWageCalculation
+  648  git add EmpWageComputation.sh
+  649  git commit -m "Calculations Based on both Monthly Hous and Days done UC6"
+  650  git push origin UC6CheckDaysAndHoursForWageCalculation 
+  651  git checkout master
+  652  git pull 
+  653  git merge UC6CheckDaysAndHoursForWageCalculation 
+  654  git push origin master
+  655  git pull
+  657  git checkout -b UC7RefactorCodeUsingFunction
+  663  git add EmpWageComputation.sh 
+  664  git commit -m "Refactor of code using daily work hours Function"
+  665  git push origin UC7RefactorCodeUsingFunction 
+  666  git checkout master
+  667  git pull
+  668  git merge UC7RefactorCodeUsingFunction 
+  669  git push origin master
+  670  git checkout -b UC8DailyWageAlongWithTotalWage
+  674  git add EmpWageComputation.sh 
+  675  git commit -m "Daily wage And Monthly Wage Stored UC8"
+  676  git push origin UC8DailyWageAlongWithTotalWage 
+  677  git checkout master
+  678  git merge UC8DailyWageAlongWithTotalWage 
+  679  git push origin master
+  680  git checkout -b UC9DailyWageAndDay
+  685  git add EmpWageComputation.sh 
+  686  git commit -m "UC9 Daily wage and day stored"
+  687  git push origin UC9DailyWageAndDay 
+  688  git checkout master
+  689  git merge UC9DailyWageAndDay  
+  690  git push origin master
+  691  git checkout UC8DailyWageAlongWithTotalWage 
+  693  git add EmpWageComputation.sh 
+  695  git commit -m "Bug regarding Total Wage Handled"
+  696  git push origin UC8DailyWageAlongWithTotalWage 
+  697  git checkout master
+  698  history | grep git
+  699  history | grep git > gitHistoryOfEmployeeWageCalculation.txt
